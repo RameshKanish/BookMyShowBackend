@@ -1,7 +1,7 @@
 package com.example.BookMyShow.service.ticket;
 
 import com.example.BookMyShow.exceptions.MovieNotFoundException;
-import com.example.BookMyShow.exceptions.SeatNotFoundException;
+import com.example.BookMyShow.  exceptions.SeatNotFoundException;
 import com.example.BookMyShow.exceptions.ShowNotFoundException;
 import com.example.BookMyShow.exceptions.UserNotFoundException;
 import com.example.BookMyShow.models.*;
