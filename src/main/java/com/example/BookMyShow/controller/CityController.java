@@ -11,9 +11,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-@CrossOrigin
+
+
+
+
 @RestController
+@CrossOrigin
 @RequestMapping("/city")
+
 public class CityController {
     @Autowired
     private CityService cityService;
@@ -27,6 +32,6 @@ public class CityController {
     @GetMapping
     public ResponseEntity<List<City>> getAllCity(){
         List<City> city = cityService.getAllCity();
-        return new ResponseEntity<>(city , HttpStatus.FOUND);
+        return new ResponseEntity<>(city , HttpStatus.CREATED);
     }
 }
